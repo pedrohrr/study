@@ -1,1 +1,1 @@
-"# study" 
+# Repository for Study Projects
