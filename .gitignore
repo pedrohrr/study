@@ -1,2 +1,4 @@
 */target
 .idea
+ecommerce/node_modules/
+ecommerce/src/main/resources/static/built/

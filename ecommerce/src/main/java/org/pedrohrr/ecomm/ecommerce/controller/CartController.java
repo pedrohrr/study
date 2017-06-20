@@ -14,17 +14,17 @@ public class CartController {
     private CartService service;
 
     @PostMapping
-    public CartDto add(final AddProductDto dto) {
+    public CartDto add(@RequestBody final AddProductDto dto) {
         return service.add(dto);
     }
 
     @PutMapping
-    public CartDto changeQuantity(final AddProductDto dto) {
+    public CartDto changeQuantity(@RequestBody final AddProductDto dto) {
         return service.changeQuantity(dto);
     }
 
     @DeleteMapping(path = "/{id}")
-    public CartDto remove(final int id) {
+    public CartDto remove(@PathVariable final int id) {
         return service.remove(id);
     }
 
